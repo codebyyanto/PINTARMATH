@@ -19,6 +19,9 @@
             android:name=".Login_Activity"
             android:exported="false" />
         <activity
+            android:name=".Register_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Loading_Activity"
             android:exported="true">
             <intent-filter>
