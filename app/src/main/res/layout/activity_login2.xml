@@ -73,11 +73,11 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PINTARMATH"
         android:fontFamily="@font/poppinsbold"
-         android:textColor="@color/primary_blue"
-        android:textSize="10sp"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="246dp" />
+        android:text="PINTARMATH"
+        android:textColor="@color/primary_blue"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="239dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
