@@ -16,7 +16,7 @@ class Loading_Activity : AppCompatActivity() {
 
         val btn_mulai = findViewById<Button>(R.id.btn_mulai)
         btn_mulai.setOnClickListener {
-            val intent = Intent(this, Login_Activity2::class.java)
+            val intent = Intent(this, Register_Activity::class.java)
             startActivity(intent)
             finish()
 
