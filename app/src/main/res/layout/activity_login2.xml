@@ -8,17 +8,18 @@
     tools:context=".Login_Activity2">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/img_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selamat datang"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/img3_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -28,7 +29,7 @@
         tools:text="Email" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/img4_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -38,7 +39,7 @@
         tools:text="Password" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/img5_buttton"
         android:layout_width="204dp"
         android:layout_height="51dp"
         android:text="Login"
@@ -46,18 +47,18 @@
         tools:layout_editor_absoluteY="548dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/img6_lupaPw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lupa password? Reset Password"
+        android:text="Lupa password?  "
         tools:layout_editor_absoluteX="107dp"
         tools:layout_editor_absoluteY="621dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/img8_blmpunyaakun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Belum punya akun? Daftar"
+        android:text="Belum punya akun? "
         tools:layout_editor_absoluteX="124dp"
         tools:layout_editor_absoluteY="665dp" />
 
@@ -70,7 +71,7 @@
         tools:layout_editor_absoluteY="66dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/img_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppinsbold"
@@ -79,5 +80,23 @@
         android:textSize="40sp"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="239dp" />
+
+    <TextView
+        android:id="@+id/img7_resertPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset password"
+        android:textColor="#FF0000"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <TextView
+        android:id="@+id/img9_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textColor="#FF0000"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="665dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
