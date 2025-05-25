@@ -2,101 +2,134 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/login_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FFF7FAFF"
     tools:context=".Login_Activity2">
 
+    <!-- Logo -->
+    <!-- Logo: Ganti @drawable/ic_logo dengan file logo kamu di drawable -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/pintarmath"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- Judul -->
     <TextView
-        android:id="@+id/img_2"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PINTARMATH"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0C1D4A"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Selamat datang -->
+    <TextView
+        android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selamat datang"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
 
+    <!-- Email -->
     <EditText
-        android:id="@+id/img3_email"
-        android:layout_width="wrap_content"
+        android:id="@+id/email"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="401dp"
-        tools:text="Email" />
+        android:backgroundTint="#000000"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
 
+    <!-- Password -->
     <EditText
-        android:id="@+id/img4_pass"
-        android:layout_width="wrap_content"
+        android:id="@+id/password"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="470dp"
-        tools:text="Password" />
+        android:backgroundTint="#CCCCCC"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/img5_buttton"
-        android:layout_width="204dp"
-        android:layout_height="51dp"
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Login"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="548dp" />
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7C4DFF"
+        android:background="@drawable/button_blue"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
 
+
+    <!-- Lupa password -->
     <TextView
-        android:id="@+id/img6_lupaPw"
+        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lupa password?  "
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="621dp" />
+        android:text="Lupa password? "
+        android:textColor="#888888"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/login_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
 
     <TextView
-        android:id="@+id/img8_blmpunyaakun"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Belum punya akun? "
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="665dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="311dp"
-        android:layout_height="153dp"
-        app:srcCompat="@drawable/pintarmath"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="66dp" />
-
-    <TextView
-        android:id="@+id/img_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppinsbold"
-        android:text="PINTARMATH"
-        android:textColor="@color/primary_blue"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="239dp" />
-
-    <TextView
-        android:id="@+id/img7_resertPw"
+        android:id="@+id/reset_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset password"
         android:textColor="#FF0000"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="621dp" />
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@id/forgot_password"
+        app:layout_constraintStart_toEndOf="@id/forgot_password" />
+
+    <!-- Daftar -->
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun? "
+        android:textColor="#888888"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/forgot_password"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp" />
 
     <TextView
-        android:id="@+id/img9_daftar"
+        android:id="@+id/register_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Daftar"
         android:textColor="#FF0000"
-        tools:layout_editor_absoluteX="248dp"
-        tools:layout_editor_absoluteY="665dp" />
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="@id/register_text"
+        app:layout_constraintStart_toEndOf="@id/register_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
