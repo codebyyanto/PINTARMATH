@@ -20,6 +20,7 @@ class Register_Activity : AppCompatActivity() {
         loginLink.setOnClickListener {
             val intent = Intent(this, Login_Activity2::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
