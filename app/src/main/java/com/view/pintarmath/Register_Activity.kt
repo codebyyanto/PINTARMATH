@@ -2,6 +2,7 @@ package com.view.pintarmath
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,15 @@ class Register_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_register)
+
+        // Event klik untuk mengarahkan ke Login_Activity2 saat button daftar di klik
+        val btn_daftar = findViewById<Button>(R.id.btn_daftar)
+        btn_daftar.setOnClickListener {
+            val intent = Intent(this, Login_Activity2::class.java)
+            startActivity(intent)
+            finish()
+            }
+
 
         // Event klik untuk mengarahkan ke Login_Activity2 saat TextView "Login" diklik
         val klik_login = findViewById<TextView>(R.id.klik_login)
