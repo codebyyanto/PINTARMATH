@@ -19,6 +19,16 @@ class Lupa_Password_Activity : AppCompatActivity() {
         setContentView(R.layout.activity_lupa_password)
 
 
+        //  event untuk button kirim
+        // Inisialisasi Button "Kirim"
+        val buttonKirim = findViewById<Button>(R.id.btn_kirim)
+
+        // Event klik untuk Button "Kirim"
+        buttonKirim.setOnClickListener {
+            Toast.makeText(this, "Email telah dikirim", Toast.LENGTH_SHORT).show()
+        }
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
