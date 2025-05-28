@@ -1,4 +1,4 @@
-# 🧠 PINTARMATH - Proyek Kotlin
+# 🧠 PINTARMATH
 
 > 🏷️ `BAHASA` **KOTLIN** 📦 `BUILD` **GRADLE**  
 > _Proyek Kotlin edukatif untuk melatih kemampuan matematika dengan cepat, mudah, dan terstruktur_ 🔍
