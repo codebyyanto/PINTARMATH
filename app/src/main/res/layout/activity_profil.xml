@@ -8,6 +8,7 @@
     android:background="@color/white"
     tools:context=".Profil_Activity">
 
+    <!-- Header bagian atas dengan judul dan tombol kembali -->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
@@ -19,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center_vertical">
 
+        <!-- Ikon kembali -->
         <ImageView
             android:id="@+id/back_icon"
             android:layout_width="24dp"
@@ -27,6 +29,7 @@
             android:src="@drawable/arrow_back"
             android:contentDescription="Back" />
 
+        <!-- Judul header -->
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
@@ -38,6 +41,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <!-- Gambar profil -->
     <ImageView
         android:id="@+id/profile_image"
         android:layout_width="100dp"
@@ -48,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-
+    <!-- Nama pengguna -->
     <TextView
         android:id="@+id/profile_name"
         android:layout_width="wrap_content"
@@ -62,6 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
+    <!-- Username dan nomor HP -->
     <TextView
         android:id="@+id/profile_username"
         android:layout_width="wrap_content"
@@ -74,6 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Daftar menu/opsi akun -->
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="wrap_content"
@@ -82,89 +88,92 @@
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="301dp" />
 
+    <!-- Label "Akun" -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akun"
+        android:fontFamily="@font/poppinsbold"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="302dp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Akun"
-            android:fontFamily="@font/poppinsbold"
-            tools:layout_editor_absoluteX="73dp"
-            tools:layout_editor_absoluteY="302dp" />
+    <!-- Ikon untuk item menu lainnya -->
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/person"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="342dp" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/person"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="342dp" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/person"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="385dp" />
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/person"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="385dp" />
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/person"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="428dp" />
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/person"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="428dp" />
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/person"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="467dp" />
 
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/person"
-            tools:layout_editor_absoluteX="34dp"
-            tools:layout_editor_absoluteY="467dp" />
+    <!-- Label untuk masing-masing menu -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sosial Media"
+        android:fontFamily="@font/poppinsbold"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="345dp" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sosial Media"
-            android:fontFamily="@font/poppinsbold"
-            tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="345dp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riwayat"
+        android:fontFamily="@font/poppinsbold"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="393dp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Riwayat"
-            android:fontFamily="@font/poppinsbold"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="393dp" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorit"
+        android:fontFamily="@font/poppinsbold"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="435dp" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Favorit"
-            android:fontFamily="@font/poppinsbold"
-            tools:layout_editor_absoluteX="77dp"
-            tools:layout_editor_absoluteY="435dp" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rubah Password"
+        android:fontFamily="@font/poppinsbold"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="474dp" />
 
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rubah Password"
-            android:fontFamily="@font/poppinsbold"
-            tools:layout_editor_absoluteX="75dp"
-            tools:layout_editor_absoluteY="474dp" />
-
+    <!-- Bagian konten utama dan footer -->
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Konten Utama -->
+        <!-- ScrollView sebagai konten utama -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -172,7 +181,7 @@
             <!-- Konten lainnya -->
         </ScrollView>
 
-        <!-- Footer -->
+        <!-- Footer bawah dengan ikon navigasi -->
         <LinearLayout
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
@@ -183,7 +192,7 @@
             android:background="@drawable/footer_background"
             android:paddingHorizontal="16dp">
 
-            <!-- 5 ikon -->
+            <!-- Ikon navigasi (Home, Settings, QR, Profile) -->
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -213,8 +222,5 @@
                 android:contentDescription="Profile" />
         </LinearLayout>
     </RelativeLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
