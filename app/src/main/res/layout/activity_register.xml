@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".Register_Activity">
 
-
+        <!-- Logo aplikasi -->
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="210dp"
@@ -19,6 +19,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             />
 
+        <!-- Nama aplikasi dengan font tebal -->
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
@@ -32,6 +33,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
+        <!-- Judul halaman (Daftar) -->
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -44,6 +46,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- Input untuk email -->
         <EditText
             android:id="@+id/editTextTextEmailAddress2"
             android:layout_width="0dp"
@@ -58,6 +61,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- Input untuk password -->
         <EditText
             android:id="@+id/editTextTextPassword2"
             android:layout_width="0dp"
@@ -72,6 +76,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- Input untuk konfirmasi password -->
         <EditText
             android:id="@+id/editTextTextPassword3"
             android:layout_width="0dp"
@@ -86,6 +91,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- Tombol untuk mendaftar -->
         <Button
             android:id="@+id/btn_daftar"
             android:layout_width="wrap_content"
@@ -97,6 +103,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- Teks "Sudah punya akun?" -->
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
@@ -110,6 +117,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_daftar" />
 
+        <!-- Tautan login -->
         <TextView
             android:id="@+id/klik_login"
             android:layout_width="wrap_content"
@@ -121,6 +129,7 @@
             app:layout_constraintTop_toTopOf="@id/textView7"
             app:layout_constraintStart_toEndOf="@id/textView7" />
 
+        <!-- Label "Masuk dengan" untuk login sosial media -->
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
@@ -133,6 +142,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- Ikon sosial media untuk login alternatif -->
         <LinearLayout
             android:id="@+id/social_icons"
             android:layout_width="wrap_content"
@@ -143,6 +153,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp">
 
+        <!-- Ikon Google -->
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="46dp"
@@ -152,6 +163,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/imageView5" />
 
+        <!-- Ikon Facebook -->
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
@@ -161,6 +173,7 @@
             app:layout_constraintStart_toEndOf="@id/imageView4"
             app:layout_constraintEnd_toStartOf="@id/imageView6" />
 
+        <!-- Ikon Instagram -->
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
