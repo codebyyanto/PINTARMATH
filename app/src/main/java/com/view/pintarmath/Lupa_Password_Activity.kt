@@ -29,6 +29,17 @@ class Lupa_Password_Activity : AppCompatActivity() {
         }
 
 
+        //  event untuk text "Login" pada kalimat sudah punya akun?Login
+        // Inisialisasi TextView "Login"
+        val klikLoginLupaPw = findViewById<TextView>(R.id.klik_login_lupa_pw)
+
+        // Event klik: Arahkan ke Login_Activity2 saat TextView "Login" diklik
+        klikLoginLupaPw.setOnClickListener {
+            val intent = Intent(this, Login_Activity2::class.java)
+            startActivity(intent)
+        }
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
