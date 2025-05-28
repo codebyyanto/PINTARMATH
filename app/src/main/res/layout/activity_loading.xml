@@ -8,67 +8,70 @@
     android:background="@color/white"
     tools:context=".Loading_Activity">
 
-        <TextView
-            android:id="@+id/logo_pintarmath"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppinsbold"
-            android:text="PINTARMATH"
-            android:textColor="@color/primary_blue"
-            android:textSize="40sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/imageView"
-            app:layout_constraintVertical_bias="0.1" />
+    <!-- Judul/logo aplikasi -->
+    <TextView
+        android:id="@+id/logo_pintarmath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="PINTARMATH"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/primary_blue"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintVertical_bias="0.1" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintTop_toBottomOf="@id/logo_pintarmath"
-            app:layout_constraintBottom_toTopOf="@id/textView2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintDimensionRatio="326:354"
-            app:srcCompat="@drawable/pintarmath" />
+    <!-- Gambar ilustrasi -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/pintarmath"
+        app:layout_constraintDimensionRatio="326:354"
+        app:layout_constraintTop_toBottomOf="@id/logo_pintarmath"
+        app:layout_constraintBottom_toTopOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="8dp"
-            android:text="Pelajari matematika dengan cara menyenangkan dan interaktif. Aplikasi ini membantu meningkatkan kemampuanmu dengan cepat dan mudah!"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppinsligtht"
-            android:textSize="15sp"
-            app:layout_constraintTop_toBottomOf="@id/imageView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Deskripsi singkat aplikasi -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Pelajari matematika dengan cara menyenangkan dan interaktif. Aplikasi ini membantu meningkatkan kemampuanmu dengan cepat dan mudah!"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsligtht"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Tombol untuk memulai aplikasi -->
     <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_mulai"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="32dp"
-            android:background="@drawable/button_blue"
-            android:fontFamily="@font/poppinsbold"
-            android:text="Mulai"
-            android:textColor="@color/white"
-            app:layout_constraintTop_toBottomOf="@id/textView2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.5" />
-
+        android:id="@+id/btn_mulai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_blue"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Mulai"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
