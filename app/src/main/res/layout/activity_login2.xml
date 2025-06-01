@@ -1,139 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/login_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
     android:background="@color/white"
+    android:fillViewport="true"
     tools:context=".Login_Activity2">
 
-    <!-- Logo -->
-    <!-- Logo: Ganti @drawable/ic_logo dengan file logo kamu di drawable -->
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="173dp"
-        android:layout_height="149dp"
-        android:src="@drawable/pintarmath"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <!-- Judul -->
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PINTARMATH"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="#0C1D4A"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:padding="24dp"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="10dp">
 
-    <!-- Selamat datang -->
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/pintarmath"
+            app:layout_constraintDimensionRatio="1.16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.5" />
 
-    <!-- Email -->
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="PINTARMATH"
+            android:textColor="#0C1D4A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
 
-    <TextView
-        android:id="@+id/welcome_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Selamat datang"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        <!-- Selamat datang -->
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Selamat datang"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:backgroundTint="#000000"
-        app:layout_constraintTop_toBottomOf="@id/welcome_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#000000"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcome_text" />
 
-    <!-- Password -->
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:backgroundTint="#CCCCCC"
-        app:layout_constraintTop_toBottomOf="@id/email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        <!-- Password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#CCCCCC"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email" />
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#7C4DFF"
-        android:background="@drawable/button_blue"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        <!-- Tombol Login -->
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/button_blue"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password" />
 
+        <!-- Lupa password -->
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="24dp"
+            android:text="Lupa password? "
+            android:textColor="#888888"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_button" />
 
-    <!-- Lupa password -->
-    <TextView
-        android:id="@+id/forgot_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lupa password? "
-        android:textColor="#888888"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/login_button"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp" />
+        <!-- Daftar -->
+        <TextView
+            android:id="@+id/reset_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="0dp"
+            android:text="Reset password"
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/forgot_password"
+            app:layout_constraintTop_toTopOf="@id/forgot_password" />
 
-    <TextView
-        android:id="@+id/reset_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reset password"
-        android:textColor="#FF0000"
-        android:textSize="12sp"
-        app:layout_constraintTop_toTopOf="@id/forgot_password"
-        app:layout_constraintStart_toEndOf="@id/forgot_password" />
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="4dp"
+            android:text="Belum punya akun? "
+            android:textColor="#888888"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forgot_password" />
 
-    <!-- Daftar -->
-    <TextView
-        android:id="@+id/register_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Belum punya akun? "
-        android:textColor="#888888"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/forgot_password"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/register_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="0dp"
+            android:text="Daftar"
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/register_text"
+            app:layout_constraintTop_toTopOf="@id/register_text" />
 
-    <TextView
-        android:id="@+id/register_link"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Daftar"
-        android:textColor="#FF0000"
-        android:textSize="12sp"
-        app:layout_constraintTop_toTopOf="@id/register_text"
-        app:layout_constraintStart_toEndOf="@id/register_text" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
