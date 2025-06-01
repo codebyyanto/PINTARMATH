@@ -28,7 +28,6 @@
 |------------|-----------------------------------|
 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white) | Bahasa pemrograman utama |
 | ![Gradle](https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=white) | Otomatisasi build |
-| *Opsional: Android / Ktor / Jetpack Compose* | Tergantung platform target Anda |
 
 ---
 

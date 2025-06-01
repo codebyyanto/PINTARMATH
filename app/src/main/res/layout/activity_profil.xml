@@ -169,19 +169,21 @@
         tools:layout_editor_absoluteY="474dp" />
 
     <!-- Bagian konten utama dan footer -->
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <!-- ScrollView sebagai konten utama -->
+
+        <!-- Footer bawah dengan ikon navigasi -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/footerLayout">
+            android:layout_above="@+id/footerLayout"
+            android:layout_marginBottom="-1dp">
             <!-- Konten lainnya -->
         </ScrollView>
 
-        <!-- Footer bawah dengan ikon navigasi -->
         <LinearLayout
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
