@@ -103,7 +103,7 @@
         android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/person"
+        app:srcCompat="@drawable/group"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="342dp" />
 
@@ -111,7 +111,7 @@
         android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/person"
+        app:srcCompat="@drawable/riwayat"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="385dp" />
 
@@ -119,7 +119,7 @@
         android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/person"
+        app:srcCompat="@drawable/favorite"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="428dp" />
 
@@ -127,7 +127,7 @@
         android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/person"
+        app:srcCompat="@drawable/key"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="467dp" />
 
