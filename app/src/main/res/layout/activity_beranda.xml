@@ -114,46 +114,76 @@
     </ScrollView>
 
 
-    <!-- FOOTER -->
+    <!-- Footer Navigation -->
     <LinearLayout
         android:id="@+id/footerLayout"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:gravity="center"
         android:background="@drawable/footer_background"
+        android:gravity="center"
+        android:orientation="horizontal"
         android:paddingHorizontal="16dp"
+        android:weightSum="5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/home"
-            android:contentDescription="Home" />
+            android:adjustViewBounds="true"
+            android:contentDescription="Home"
+            android:maxWidth="32dp"
+            android:maxHeight="32dp"
+            android:src="@drawable/home" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/setting"
-            android:contentDescription="Settings" />
+            android:adjustViewBounds="true"
+            android:contentDescription="Settings"
+            android:maxWidth="32dp"
+            android:maxHeight="32dp"
+            android:src="@drawable/setting" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/qr_code_scanne"
-            android:contentDescription="QR" />
+            android:adjustViewBounds="true"
+            android:contentDescription="QR Code"
+            android:maxWidth="32dp"
+            android:maxHeight="32dp"
+            android:src="@drawable/qr_code_scanne" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/account_circle"
-            android:contentDescription="Profile" />
+            android:adjustViewBounds="true"
+            android:contentDescription="Notification"
+            android:maxWidth="32dp"
+            android:maxHeight="32dp"
+            android:src="@drawable/list_icon" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="Profile"
+            android:maxWidth="32dp"
+            android:maxHeight="32dp"
+            android:src="@drawable/account_circle" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
