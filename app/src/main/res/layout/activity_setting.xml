@@ -188,6 +188,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
+        <!--    icon home    -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -199,6 +200,7 @@
             android:maxHeight="32dp"
             android:src="@drawable/home" />
 
+        <!--    icon setting    -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -210,6 +212,7 @@
             android:maxHeight="32dp"
             android:src="@drawable/setting" />
 
+        <!--    icon qrcode    -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -221,6 +224,7 @@
             android:maxHeight="32dp"
             android:src="@drawable/qr_code_scanne" />
 
+        <!--    icon notifikasi    -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -232,6 +236,7 @@
             android:maxHeight="32dp"
             android:src="@drawable/list_icon" />
 
+        <!--    icon profil    -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
