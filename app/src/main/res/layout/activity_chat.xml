@@ -36,8 +36,65 @@
             android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
+    <!-- Chat dari admin (kiri) -->
+    <LinearLayout
+        android:id="@+id/chat_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_chat_admin"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <!-- RecyclerView untuk chat -->
+        <TextView
+            android:id="@+id/message_text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bisa dijelaskan untuk masalahnya?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/message_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="13:11"
+            android:textSize="12sp"
+            android:textColor="#2E0070" />
+    </LinearLayout>
+
+    <!-- Chat dari user (kanan) -->
+    <LinearLayout
+        android:id="@+id/chat_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_chat_user"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/chat_left"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/message_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya mengalami kendala dalam login"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/message_time_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="13:12"
+            android:textSize="12sp"
+            android:textColor="#2E0070" />
+    </LinearLayout>
 
     <!-- Input Pesan -->
     <androidx.recyclerview.widget.RecyclerView
