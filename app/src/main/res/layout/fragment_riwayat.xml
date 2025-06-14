@@ -135,7 +135,7 @@
         android:layout_height="54dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="Diskrit"
         tools:layout_editor_absoluteX="21dp"
         tools:layout_editor_absoluteY="171dp" />
 
