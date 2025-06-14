@@ -21,9 +21,7 @@
         <activity
             android:name=".Login_Activity2"
             android:exported="false" />
-        <activity
-            android:name=".Login_Activity"
-            android:exported="false" />
+
         <activity
             android:name=".Register_Activity"
             android:exported="false" />
@@ -36,15 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".Beranda_Activity" android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
     </application>
 
 </manifest>

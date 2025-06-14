@@ -14,17 +14,19 @@ class Login_Activity2 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_login2)
 
-        val loginButton = findViewById<Button>(R.id.login_button)
+        // Inisialisasi tombol login
+        val loginButton = findViewById<Button>(R.id.btn_login)
         loginButton.setOnClickListener {
+            // Aksi ketika tombol login diklik
             val intent = Intent(this, Beranda_Activity::class.java)
             startActivity(intent)
-            finish()
+        }
 
-            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.login_layout)) { v, insets ->
-                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-                insets
-            }
+        // Mengatur padding agar layout tidak tertutup oleh status/navigation bar
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.login_layout)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
         }
     }
 }
