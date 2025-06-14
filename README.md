@@ -29,21 +29,6 @@
 | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white) | Bahasa pemrograman utama |
 | ![Gradle](https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=white) | Otomatisasi build |
 
----
-
-## 🧾 Struktur Proyek
-
-```
-pintarmath/
-├── app/             # Titik masuk utama aplikasi
-├── core/            # Modul inti dan utilitas umum
-├── feature/         # Fitur matematika spesifik (misal: aritmetika, aljabar)
-├── data/            # Model data dan sumber data
-├── domain/          # Logika bisnis dan use-case
-├── test/            # Pengujian unit dan integrasi
-├── build.gradle.kts # Konfigurasi build Gradle
-└── README.md        # Dokumentasi proyek
-```
 
 ---
 
