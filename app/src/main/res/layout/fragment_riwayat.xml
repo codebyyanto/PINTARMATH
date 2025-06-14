@@ -37,31 +37,18 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Content -->
-
-    <!-- Footer Navigation -->
-
-    <ScrollView
+    <!-- RecyclerView untuk menampilkan daftar pelajaran -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRiwayat"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/white"
         android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@id/footerLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:text="Kalkulus" />
-    </ScrollView>
-
+    <!-- Footer Navigation -->
     <LinearLayout
         android:id="@+id/footerLayout"
         android:layout_width="0dp"
@@ -69,7 +56,8 @@
         android:background="@drawable/footer_background"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingHorizontal="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:weightSum="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,5 +118,45 @@
             android:maxHeight="32dp"
             android:src="@drawable/account_circle" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="396dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Kalkulus"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="387dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="391dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="391dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="310dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
