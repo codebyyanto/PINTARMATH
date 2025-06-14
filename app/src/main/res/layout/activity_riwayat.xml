@@ -93,7 +93,7 @@
         android:layout_height="39dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Aljabar"
+        android:text="Aljabar Linear"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="254dp" />
 
