@@ -9,23 +9,26 @@
     tools:context=".Profil_Activity">
 
     <!-- Header -->
+
+    <!-- Profile Image -->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:orientation="horizontal"
         android:background="#3F0CA7"
         android:gravity="center_vertical"
-        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginStart="16dp"
-            android:src="@drawable/arrow_back"
-            android:contentDescription="Back" />
+            android:contentDescription="Back"
+            android:src="@drawable/arrow_back" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,7 +40,6 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Profile Image -->
     <ImageView
         android:id="@+id/profile_image"
         android:layout_width="100dp"
