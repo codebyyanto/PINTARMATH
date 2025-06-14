@@ -4,46 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     tools:context=".Riwayat_Activity">
 
-    <!-- Bagian Atas dengan Warna Biru Tua -->
-
-    <!-- Bagian Konten -->
-
+    <!-- Toolbar Atas -->
     <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="460dp"
-        android:layout_height="98dp"
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:background="#00008B"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <LinearLayout
-        android:id="@+id/linearLayoutContent"
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Riwayat"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:paddingEnd="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- RecyclerView List Riwayat -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout4" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Garis Panduan (Opsional) -->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="#00008B"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="-11dp" />
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <!-- Space (Opsional) -->
-    <Space
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="97dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="416dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Kalkulus"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="443dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Diskrit"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="433dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Aljabar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="413dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Statistika"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="318dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
