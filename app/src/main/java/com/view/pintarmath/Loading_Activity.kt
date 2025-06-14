@@ -14,6 +14,8 @@ class Loading_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_loading)
 
+//        menambahkan event pada "btn_mulai" agar menuju halaman register
+
         val btn_mulai = findViewById<Button>(R.id.btn_mulai)
         btn_mulai.setOnClickListener {
             val intent = Intent(this, Register_Activity::class.java)
