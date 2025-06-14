@@ -145,7 +145,7 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="Aljabar"
         tools:layout_editor_absoluteX="23dp"
         tools:layout_editor_absoluteY="240dp" />
 
