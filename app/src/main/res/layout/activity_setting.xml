@@ -190,6 +190,7 @@
 
         <!--    icon home    -->
         <ImageView
+            android:id="@+id/ic_home"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -202,6 +203,7 @@
 
         <!--    icon setting    -->
         <ImageView
+            android:id="@+id/ic_setting"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -214,6 +216,7 @@
 
         <!--    icon qrcode    -->
         <ImageView
+            android:id="@+id/ic_qr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -226,6 +229,7 @@
 
         <!--    icon notifikasi    -->
         <ImageView
+            android:id="@+id/ic_riwayat"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -238,6 +242,7 @@
 
         <!--    icon profil    -->
         <ImageView
+            android:id="@+id/ic_profil"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
