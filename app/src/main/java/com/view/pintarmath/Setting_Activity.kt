@@ -28,7 +28,6 @@ class Setting_Activity : AppCompatActivity() {
             startActivity(Intent(this, Setting_Activity::class.java))
         }
 
-
         profilIcon.setOnClickListener {
             startActivity(Intent(this, Profil_Activity::class.java))
         }
