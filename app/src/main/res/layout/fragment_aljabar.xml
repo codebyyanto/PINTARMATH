@@ -110,18 +110,6 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/img_setting"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:contentDescription="Settings"
-            android:maxWidth="32dp"
-            android:maxHeight="32dp"
-            android:src="@drawable/setting" />
-
-        <ImageView
             android:id="@+id/img_scan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
