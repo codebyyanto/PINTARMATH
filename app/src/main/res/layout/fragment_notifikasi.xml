@@ -112,17 +112,6 @@
         <!--    icon qrcode    -->
 
         <!--    icon notifikasi    -->
-        <ImageView
-            android:id="@+id/img_notif"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:contentDescription="Notification"
-            android:maxWidth="32dp"
-            android:maxHeight="32dp"
-            android:src="@drawable/list_icon" />
 
         <!--    icon profil    -->
         <ImageView
