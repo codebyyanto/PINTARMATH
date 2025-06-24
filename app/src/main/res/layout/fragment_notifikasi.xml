@@ -106,19 +106,10 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <!--    icon home    -->
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:contentDescription="Home"
-            android:maxWidth="32dp"
-            android:maxHeight="32dp"
-            android:src="@drawable/home" />
 
         <!--    icon setting    -->
         <ImageView
+            android:id="@+id/img_setting"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -131,6 +122,7 @@
 
         <!--    icon qrcode    -->
         <ImageView
+            android:id="@+id/img_scan"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -143,6 +135,7 @@
 
         <!--    icon notifikasi    -->
         <ImageView
+            android:id="@+id/img_notif"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -155,6 +148,7 @@
 
         <!--    icon profil    -->
         <ImageView
+            android:id="@+id/img_profile"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
