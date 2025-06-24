@@ -110,17 +110,6 @@
         <!--    icon setting    -->
 
         <!--    icon qrcode    -->
-        <ImageView
-            android:id="@+id/img_scan"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:adjustViewBounds="true"
-            android:contentDescription="QR Code"
-            android:maxWidth="32dp"
-            android:maxHeight="32dp"
-            android:src="@drawable/qr_code_scanne" />
 
         <!--    icon notifikasi    -->
         <ImageView
