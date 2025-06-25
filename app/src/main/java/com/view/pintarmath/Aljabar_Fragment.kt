@@ -12,10 +12,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [AljabarFragment.newInstance] factory method to
+ * Use the [Aljabar_Fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class AljabarFragment : Fragment() {
+class Aljabar_Fragment : Fragment() {
 
     // Parameters to hold the passed data
     private var param1: String? = null
@@ -49,7 +49,7 @@ class AljabarFragment : Fragment() {
          */
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            AljabarFragment().apply {
+            Aljabar_Fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
