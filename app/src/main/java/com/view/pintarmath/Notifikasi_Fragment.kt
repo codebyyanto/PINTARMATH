@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [NotifikasiFragment.newInstance] factory method to
+ * Use the [Notifikasi_Fragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class NotifikasiFragment : Fragment() {
+class Notifikasi_Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -49,7 +49,7 @@ class NotifikasiFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            NotifikasiFragment().apply {
+            Notifikasi_Fragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
