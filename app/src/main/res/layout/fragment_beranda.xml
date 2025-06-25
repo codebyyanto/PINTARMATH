@@ -97,7 +97,7 @@
                 android:src="@drawable/statistika" />
 
             <ImageView
-                android:id="@+id/ic_qr"
+                android:id="@+id/kalkulus"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginBottom="16dp"

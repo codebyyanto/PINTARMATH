@@ -22,6 +22,8 @@ class Main_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+
+//        SEMUA FUNGSI UNTUK BOTTOM NAVIGASI
         // Inisialisasi ID
         homeIcon = findViewById(R.id.ic_home)
         settingIcon = findViewById(R.id.ic_setting)
