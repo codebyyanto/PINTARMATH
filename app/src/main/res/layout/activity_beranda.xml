@@ -52,6 +52,15 @@
                     android:textColor="#8A8A8A"
                     android:textSize="14sp" />
             </LinearLayout>
+
+            <!-- Notification icon -->
+            <ImageView
+                android:id="@+id/notification_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="Notifikasi"
+                android:src="@drawable/notifications" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
