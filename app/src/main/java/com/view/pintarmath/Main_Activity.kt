@@ -14,6 +14,10 @@ class Main_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        // Tampilkan fragment awal
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, Beranda_Fragment())
+            .commit()
 
         // Inisialisasi ID
         val homeIcon = findViewById<ImageView>(R.id.ic_home)
@@ -22,7 +26,7 @@ class Main_Activity : AppCompatActivity() {
 
         // Event Klik
         homeIcon.setOnClickListener {
-            startActivity(Intent(this, Beranda_Activity::class.java))
+            startActivity(Intent(this, Beranda_Fragment::class.java))
         }
 
         settingIcon.setOnClickListener {
