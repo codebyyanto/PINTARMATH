@@ -2,6 +2,7 @@ package com.view.pintarmath
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -97,4 +98,15 @@ class Main_Activity : AppCompatActivity() {
             R.id.ic_profil -> profilIcon.setColorFilter(activeColor)
         }
     }
+
+    fun showBottomNav() {
+        val bottomNav = findViewById<View>(R.id.bottom_navigation_bar)
+        bottomNav.visibility = View.VISIBLE
+    }
+
+    fun hideBottomNav() {
+        val bottomNav = findViewById<View>(R.id.bottom_navigation_bar)
+        bottomNav.visibility = View.GONE
+    }
+
 }
