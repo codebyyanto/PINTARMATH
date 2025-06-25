@@ -63,4 +63,16 @@
                 android:src="@drawable/notifications" />
         </LinearLayout>
     </LinearLayout>
+
+    <!-- ScrollView Course -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
