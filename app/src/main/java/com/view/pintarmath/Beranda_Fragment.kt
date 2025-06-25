@@ -17,6 +17,9 @@ class Beranda_Fragment : Fragment() {
         // Inflate layout fragment_beranda.xml
         val view = inflater.inflate(R.layout.fragment_beranda, container, false)
 
+        //menampilakan bottom navigasi
+        (activity as? Main_Activity)?.showBottomNav()
+
         // Cari ImageView kalkulus
         val kalkulusImage = view.findViewById<ImageView>(R.id.kalkulus)
 
