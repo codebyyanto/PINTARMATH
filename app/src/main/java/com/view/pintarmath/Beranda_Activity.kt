@@ -14,24 +14,6 @@ class Beranda_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_beranda)
 
-        // Inisialisasi ID
-        val homeIcon = findViewById<ImageView>(R.id.ic_home)
-        val settingIcon = findViewById<ImageView>(R.id.ic_setting)
-        val profilIcon = findViewById<ImageView>(R.id.ic_profil)
-
-        // Event Klik
-        homeIcon.setOnClickListener {
-            startActivity(Intent(this, Beranda_Activity::class.java))
-        }
-
-        settingIcon.setOnClickListener {
-            startActivity(Intent(this, Setting_Activity::class.java))
-        }
-
-
-        profilIcon.setOnClickListener {
-            startActivity(Intent(this, Profil_Activity::class.java))
-        }
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
