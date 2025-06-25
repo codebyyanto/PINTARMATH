@@ -18,7 +18,7 @@ class Login_Activity2 : AppCompatActivity() {
         val loginButton = findViewById<Button>(R.id.btn_login)
         loginButton.setOnClickListener {
             // Aksi ketika tombol login diklik
-            val intent = Intent(this, Beranda_Activity::class.java)
+            val intent = Intent(this, Main_Activity::class.java)
             startActivity(intent)
         }
 

@@ -21,7 +21,7 @@ class Setting_Activity : AppCompatActivity() {
 
         // Event Klik
         homeIcon.setOnClickListener {
-            startActivity(Intent(this, Beranda_Activity::class.java))
+            startActivity(Intent(this, Beranda_Fragment::class.java))
         }
 
         settingIcon.setOnClickListener {

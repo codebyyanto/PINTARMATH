@@ -14,21 +14,18 @@ class Main_Activity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // Tampilkan fragment awal
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, Beranda_Fragment())
-            .commit()
+        // Tampilkan Beranda_Fragment saat pertama kali dibuka
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Beranda_Fragment())
+                .commit()
+        }
 
         // Inisialisasi ID
-        val homeIcon = findViewById<ImageView>(R.id.ic_home)
-        val settingIcon = findViewById<ImageView>(R.id.ic_setting)
+                val settingIcon = findViewById<ImageView>(R.id.ic_setting)
         val profilIcon = findViewById<ImageView>(R.id.ic_profil)
 
         // Event Klik
-        homeIcon.setOnClickListener {
-            startActivity(Intent(this, Beranda_Fragment::class.java))
-        }
-
         settingIcon.setOnClickListener {
             startActivity(Intent(this, Setting_Activity::class.java))
         }
