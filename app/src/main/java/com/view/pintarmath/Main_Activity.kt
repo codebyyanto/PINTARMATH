@@ -13,7 +13,7 @@ class Main_Activity : AppCompatActivity() {
 
     private lateinit var homeIcon: ImageView
     private lateinit var settingIcon: ImageView
-    private lateinit var qrIcon: ImageView
+//    private lateinit var qrIcon: ImageView
     private lateinit var riwayatIcon: ImageView
     private lateinit var profilIcon: ImageView
 
