@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 
 class Profil_Fragment : Fragment() {
 
@@ -14,6 +15,16 @@ class Profil_Fragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_profil, container, false)
 
+
+        // Tombol kembali
+        val backButton = view.findViewById<ImageView>(R.id.back_button)
+        backButton.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Beranda_Fragment())
+                .commit()
+        }
+
         return view
     }
+
 }
