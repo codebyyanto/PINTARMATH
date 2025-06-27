@@ -50,8 +50,11 @@ class Main_Activity : AppCompatActivity() {
 
         // Event klik Setting (pindah activity)
         settingIcon.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Setting_Fragment())
+                .addToBackStack(null)
+                .commit()
             setActiveMenu(R.id.ic_setting)
-            startActivity(Intent(this, Setting_Fragment::class.java))
         }
 
 //        // Event klik scan soal (pindah activity)
