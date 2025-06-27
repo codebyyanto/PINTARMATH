@@ -72,7 +72,9 @@ class Main_Activity : AppCompatActivity() {
         // Event klik Profil (pindah activity)
         profilIcon.setOnClickListener {
             setActiveMenu(R.id.ic_profil)
-            startActivity(Intent(this, Profil_Activity::class.java))
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Profil_Fragment())
+                .commit()
         }
 
 
