@@ -15,6 +15,9 @@ class Diskrit_Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        // Sembunyikan bottom navigation
+        (activity as? Main_Activity)?.hideBottomNav()
+
         val view = inflater.inflate(R.layout.fragment_diskrit, container, false)
 
         // Tombol kembali
