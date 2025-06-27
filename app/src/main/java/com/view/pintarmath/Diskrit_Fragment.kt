@@ -44,7 +44,7 @@ class Diskrit_Fragment : Fragment() {
         //Materi 2
         val btnMateri2 = view.findViewById<Button>(R.id.btn_materi2)
 
-        btnMateri1.setOnClickListener {
+        btnMateri2.setOnClickListener {
             // Navigasi ke Materi2_Diskrit_Fragment
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, Materi2_Diskrit_Fragment())
