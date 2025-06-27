@@ -31,6 +31,17 @@ class Beranda_Fragment : Fragment() {
                 .commit()
         }
 
+        // Cari ImageView kalkulus
+        val DiskritImage = view.findViewById<ImageView>(R.id.kalkulus)
+
+        // Tambahkan event klik
+        kalkulusImage.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Diskrit_Fragment())
+                .addToBackStack(null) // Supaya bisa kembali
+                .commit()
+        }
+
         return view
     }
 }
