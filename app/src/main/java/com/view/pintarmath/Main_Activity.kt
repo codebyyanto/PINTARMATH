@@ -51,7 +51,7 @@ class Main_Activity : AppCompatActivity() {
         // Event klik Setting (pindah activity)
         settingIcon.setOnClickListener {
             setActiveMenu(R.id.ic_setting)
-            startActivity(Intent(this, Setting_Activity::class.java))
+            startActivity(Intent(this, Setting_Fragment::class.java))
         }
 
 //        // Event klik scan soal (pindah activity)
