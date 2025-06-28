@@ -13,7 +13,7 @@ class Materi1_Kalkulus_Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_materi1__diskrit, container, false)
+        val view = inflater.inflate(R.layout.fragment_materi1__kalkulus, container, false)
 
         // Tombol kembali
         val backButton = view.findViewById<ImageView>(R.id.back_button)
