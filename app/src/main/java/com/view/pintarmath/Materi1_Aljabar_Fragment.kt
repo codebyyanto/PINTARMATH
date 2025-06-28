@@ -8,4 +8,12 @@ import android.view.ViewGroup
 
 class Materi1_Aljabar_Fragment : Fragment() {
 
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_materi1_aljabar, container, false)
+
+        return view
+    }
 }
