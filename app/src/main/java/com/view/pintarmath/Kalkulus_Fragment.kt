@@ -39,6 +39,17 @@ class Kalkulus_Fragment : Fragment() {
                 .commit()
         }
 
+        //Materi 1
+        val btnMateri2 = view.findViewById<Button>(R.id.btn_materi2)
+
+        btnMateri2.setOnClickListener {
+            // Navigasi ke Materi2_Kalkulus_Fragment
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Materi2_Kalkulus_Fragment())
+                .addToBackStack(null)
+                .commit()
+        }
+
         return view
     }
 }
