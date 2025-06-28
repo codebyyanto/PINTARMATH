@@ -15,6 +15,8 @@ class Aljabar_Fragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_aljabar, container, false)
 
+        // Sembunyikan bottom navigation
+        (activity as? Main_Activity)?.hideBottomNav()
 
         // Tombol kembali
         val backButton = view.findViewById<ImageView>(R.id.back_button)
