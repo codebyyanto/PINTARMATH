@@ -52,6 +52,17 @@ class Diskrit_Fragment : Fragment() {
                 .commit()
         }
 
+        //Materi 3
+        val btnMateri3 = view.findViewById<Button>(R.id.btn_materi3)
+
+        btnMateri3.setOnClickListener {
+            // Navigasi ke Materi3_Diskrit_Fragment
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Materi3_Diskrit_Fragment())
+                .addToBackStack(null)
+                .commit()
+        }
+
         return view
     }
 }
